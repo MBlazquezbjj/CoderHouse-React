@@ -4,7 +4,6 @@ import Card from "./components/Card/Card";
 import ItemListContainer from "./components/ItemListContainer";
 
 
-
 function App() {
 
   const dataProducts = [{
@@ -41,6 +40,7 @@ function App() {
       <NavBar />
       <h1>E-watch</h1>
       <ItemListContainer />
+      
       <Card data={dataProducts[0]} />
       <Card data={dataProducts[1]} />
       <Card data={dataProducts[2]} />

@@ -1,6 +1,10 @@
+
+
 function CartWidget() {
     return (
-        <i></i>
+        <i>
+            <ion-icon name="cart-outline"></ion-icon>
+        </i>
     )
 }
 

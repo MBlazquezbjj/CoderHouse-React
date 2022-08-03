@@ -1,11 +1,13 @@
 import "./NavBar.css";
 import CartWidget from "./CartWidget"
-export default function NavBar() {
+export default
+
+function NavBar() {
     return (
         <header>
             
             <div className="interior">
-                <CartWidget/>
+                
                 <nav className="navegacion">
                     <ul>
 
@@ -26,7 +28,7 @@ export default function NavBar() {
                 </nav>
                 
             </div>
-            
+            <CartWidget/>
         </header>
         
         
