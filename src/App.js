@@ -2,6 +2,7 @@ import './App.css';
 import NavBar from "./components/NavBar";
 import Card from "./components/Card/Card";
 import ItemListContainer from "./components/ItemListContainer";
+import ItemCount from './components/ItemCount';
 
 
 function App() {
@@ -42,10 +43,15 @@ function App() {
       <ItemListContainer />
       
       <Card data={dataProducts[0]} />
+      <ItemCount initial={1} stock={5} />
       <Card data={dataProducts[1]} />
+      <ItemCount initial={1} stock={5} />
       <Card data={dataProducts[2]} />
+      <ItemCount initial={1} stock={5} />
       <Card data={dataProducts[3]} />
+      <ItemCount initial={1} stock={5} />
       <Card data={dataProducts[4]} />
+      <ItemCount initial={1} stock={5} />
     </div>
   );
 }

@@ -15,7 +15,7 @@ function Card(props) {
                     <h2>{props.data.name}</h2>
                     <p>{props.data.description}</p>
                     <h3> $ {props.data.price}</h3>
-                    <button>Comprar</button>
+                    
                 </div>
             </div>
         
