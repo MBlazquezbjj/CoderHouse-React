@@ -1,8 +1,5 @@
-
 import React, { useEffect, useState } from "react";
 import itemsData from "../../src/Data/data";
-import Card from "../components/Card/Card";
-
 
 function getProducts() {
     return new Promise((resolve) => {
@@ -10,8 +7,7 @@ function getProducts() {
     })
 };
 
-
-function ItemListContainer() {
+function Item() {
     const [data, setData] = useState([]);
 
     useEffect(() => {
@@ -22,22 +18,13 @@ function ItemListContainer() {
 
     return (
         <div>
-            <h1>Nuestros productos</h1>
+            <h1> productos</h1>
             {
-                data.map((productos) => <Card
-                    key={productos.id}
-                    img={productos.img}
-                    name={productos.name}
-                    description={productos.description}
-                    price={productos.price}
+                data.map()
 
-                />
-
-                )
             }
         </div>
 
     );
 }
-
-export default ItemListContainer
+export default Item

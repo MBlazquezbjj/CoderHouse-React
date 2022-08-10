@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -34,10 +34,10 @@
   color: #61dafb;
 }
 
-ion-icon{
+ion-icon {
   color: goldenrod;
   font-size: 85px;
-  
+
 
 }
 
@@ -46,6 +46,7 @@ ion-icon{
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

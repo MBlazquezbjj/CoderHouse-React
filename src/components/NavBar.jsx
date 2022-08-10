@@ -2,12 +2,12 @@ import "./NavBar.css";
 import CartWidget from "./CartWidget"
 export default
 
-function NavBar() {
+    function NavBar() {
     return (
         <header>
-            
+
             <div className="interior">
-                
+
                 <nav className="navegacion">
                     <ul>
 
@@ -24,14 +24,14 @@ function NavBar() {
                             <a href="">Contacto</a>
                         </li>
                     </ul>
-                    
+
                 </nav>
-                
+
             </div>
-            <CartWidget/>
+            <CartWidget />
         </header>
-        
-        
+
+
     )
 
 }

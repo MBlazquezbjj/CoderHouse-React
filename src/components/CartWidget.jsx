@@ -1,5 +1,3 @@
-
-
 function CartWidget() {
     return (
         <i>

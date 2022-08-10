@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 import swal from "sweetalert";
 
 
@@ -8,11 +8,11 @@ function ItemCount(props) {
     const [counter, setCounter] = React.useState(1);
 
     const add = () => {
-        if(counter < 5) {
+        if (counter < 5) {
 
-        setCounter(counter + 1);
+            setCounter(counter + 1);
+        }
     }
-}
 
     const decrease = () => {
         if (counter > 1) {
@@ -20,15 +20,15 @@ function ItemCount(props) {
         }
     }
 
-const onAdd = () => {
-    console.log("agregado")
-    if (5 > 0){
-        swal("Hecho","Agregado con exito","success");
+    const onAdd = () => {
+        console.log("agregado")
+        if (5 > 0) {
+            swal("Hecho", "Agregado con exito", "success");
+        }
+        else {
+            swal("Lo sentimos", "No hay stock disponible por el momento", "error")
+        }
     }
-    else{
-        swal("Lo sentimos","No hay stock disponible por el momento","error")
-    }
-}
 
     return (
         <div>
