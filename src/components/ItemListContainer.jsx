@@ -22,7 +22,7 @@ function ItemListContainer() {
 
     return (
         <div>
-            <h1>Nuestros productos</h1>
+            <h2>Nuestros productos</h2>
             {
                 data.map((productos) => <Card
                     key={productos.id}
