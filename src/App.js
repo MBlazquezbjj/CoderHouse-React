@@ -3,6 +3,9 @@ import NavBar from "../src/components/NavBar/NavBar.jsx";
 import Card from "./components/Card/Card";
 import ItemListContainer from "./components/ItemListContainer";
 import ItemCount from './components/ItemCount';
+import Item from './components/Item';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+
 
 
 
@@ -41,7 +44,9 @@ function App() {
     <div>
       <NavBar />
       <h1>E-watch</h1>
+      <ItemDetailContainer />
       <ItemListContainer />
+      <Item />
       <Card data={dataProducts[0]} />
       <ItemCount initial={1} stock={5} />
       <Card data={dataProducts[1]} />

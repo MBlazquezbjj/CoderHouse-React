@@ -74,9 +74,11 @@ body {
     z-index: 30;
     position: absolute;
     bottom: 0px;
-    color: #fff;
+    color: goldenrod;
     padding: 20px;
     padding-bottom: 30px;
+    
+    
 }
 
 .card .text p {
