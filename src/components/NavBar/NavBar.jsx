@@ -2,19 +2,19 @@ import "./NavBar.css";
 import CartWidget from "../CartWidget"
 
 
-    function NavBar() {
+function NavBar() {
     return (
         <header>
             <CartWidget />
             <nav>
                 <ul className="nav_links">
-                    <li> <a href="#">Iniciar Sesion</a></li>
-                    <li> <a href="#">Relojes</a></li>
-                    <li> <a href="#">Galeria</a></li>
-                    <li> <a href="#">Quienes somos</a></li>
+                    <li> <link to="/">Iniciar Sesion</link></li>
+                    <li> <link to="/">Relojes</link></li>
+                    <li> <link to="/">Galeria</link></li>
+                    <li> <link to="/">Quienes somos</link></li>
                 </ul>
             </nav>
-            <a href="#"><button>Contacto</button></a>
+            <link to=""><button>Contacto</button></link>
 
         </header>
 
