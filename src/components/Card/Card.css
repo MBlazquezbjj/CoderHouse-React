@@ -77,8 +77,8 @@ body {
     color: goldenrod;
     padding: 20px;
     padding-bottom: 30px;
-    
-    
+
+
 }
 
 .card .text p {
@@ -110,6 +110,13 @@ body {
 .card .text p button:hover {
     background: goldenrod;
     color: #000;
+
+}
+
+h3 {
+    color: darkgreen;
+    font-size: 2rem;
+    text-transform: uppercase;
 
 }
 

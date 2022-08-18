@@ -14,9 +14,4 @@ code {
 h1::first-letter {
   color: goldenrod;
 }
-h3{
-  color: darkgreen;
-  font-size: 2rem;
-  text-transform: uppercase;
-  
-}
+

@@ -1,10 +1,11 @@
 import './App.css';
 import NavBar from "../src/components/NavBar/NavBar.jsx";
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer.jsx";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer.jsx";
 import Card from "./components/Card/Card";
-import ItemListContainer from "./components/ItemListContainer";
 import ItemCount from './components/ItemCount';
-import Item from './components/Item';
-import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import Footer from './components/Footer/Footer';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 
@@ -42,23 +43,26 @@ function App() {
 
   return (
     <div>
-      <NavBar />
-      <h1>E-watch</h1>
-      <ItemDetailContainer />
-      <ItemListContainer />
-      <Item />
-      <Card data={dataProducts[0]} />
-      <ItemCount initial={1} stock={5} />
-      <Card data={dataProducts[1]} />
-      <ItemCount initial={1} stock={5} />
-      <Card data={dataProducts[2]} />
-      <ItemCount initial={1} stock={5} />
-      <Card data={dataProducts[3]} />
-      <ItemCount initial={1} stock={5} />
-      <Card data={dataProducts[4]} />
-      <ItemCount initial={1} stock={5} />
-
-
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <h1>E-watch</h1>
+          <Route path='/' element={<ItemListContainer />} />
+          <Route path='/Galeria/:id' element={<ItemDetailContainer />} />
+          <Route path='/:id' element={<ItemListContainer />} />
+          <Card data={dataProducts[0]} />
+          <ItemCount initial={1} stock={5} />
+          <Card data={dataProducts[1]} />
+          <ItemCount initial={1} stock={5} />
+          <Card data={dataProducts[2]} />
+          <ItemCount initial={1} stock={5} />
+          <Card data={dataProducts[3]} />
+          <ItemCount initial={1} stock={5} />
+          <Card data={dataProducts[4]} />
+          <ItemCount initial={1} stock={5} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }

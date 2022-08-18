@@ -20,11 +20,12 @@ header {
     z-index: 1000;
 }
 
-ul,li:hover{
+ul,
+li:hover {
     transform: scale(1.1);
 }
 
-.nav_links li a {
+.nav_links li link {
     color: whitesmoke;
     text-align: center;
     text-transform: uppercase;
@@ -34,10 +35,10 @@ ul,li:hover{
     transition: .3s linear;
 }
 
-.nav_links li a:hover {
+.nav_links li link:hover {
     color: goldenrod;
     transform: scale(1.1);
-    
+
 }
 
 button {
