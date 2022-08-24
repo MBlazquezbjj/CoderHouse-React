@@ -82,7 +82,7 @@ body {
 }
 
 .card .text p {
-    font-size: .8rem;
+    font-size: .9rem;
     opacity: 0;
     margin-bottom: -170px;
     transition: all .25s ease;
@@ -113,10 +113,18 @@ body {
 
 }
 
-h3 {
+p {
     color: darkgreen;
     font-size: 2rem;
     text-transform: uppercase;
+
+}
+
+h3 {
+    font-weight: 200;
+    margin-bottom: 15px;
+    color: #ffc600;
+    font-weight: bold;
 
 }
 
