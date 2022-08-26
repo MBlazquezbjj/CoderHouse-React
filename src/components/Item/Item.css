@@ -1,143 +1,47 @@
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    width: 100%;
-    height: 100%;
-    letter-spacing: 0.03em;
-    line-height: 1.6;
     background-color: #24252a;
+
 }
 
-.container {
+.card-img {
+    width: 280px;
+    height: 260px;
+    object-fit: cover;
+}
+
+.card-img img {
     width: 100%;
-    max-width: 1200px;
     height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
+    object-fit: contain;
 }
 
 .card {
-    width: 330px;
-    height: 430px;
-    margin: 20px;
-    background: #000;
-    border-radius: 30px;
+    margin: 10px 15px;
+    min-height: 600px;
+    width: 280px;
+    height: 100%;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.50);
+    background-color: #fff;
     overflow: hidden;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    transition: all 0.20s ease-in;
     cursor: pointer;
-    transition: all .25s ease;
-    backface-visibility: hidden;
 }
 
 .card:hover {
-    transform: scale(.9);
+    box-shadow: 0px 4px 12px 2px goldenrod;
+    transform: translateY(-6px);
 }
 
-.card:hover:after {
-    height: 280px;
+.card-detail {
+    padding: 12px 8px;
 }
 
-.card:hover .text p {
-    margin-bottom: 0px;
-    opacity: 1;
+small {
+    color: #8c8c8e;
 }
-
-.card:hover img {
-    transform: scale(1.25);
-}
-
-.card:after {
-    width: 100%;
-    content: "";
-    left: 0px;
-    bottom: 0px;
-    height: 150px;
-    position: absolute;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0)0%, rgba(0, 0, 0, 1)100%);
-    z-index: 20;
-    transition: all .25s ease;
-
-}
-
-.card img {
-    height: 100%;
-    z-index: 10;
-    transition: all .25s ease;
-}
-
-.card .text {
-    z-index: 30;
-    position: absolute;
-    bottom: 0px;
-    color: goldenrod;
-    padding: 20px;
-    padding-bottom: 30px;
-
-
-}
-
-.card .text p {
-    font-size: .9rem;
-    opacity: 0;
-    margin-bottom: -170px;
-    transition: all .25s ease;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-direction: column;
-}
-
-.card .text p button {
-    padding: 7px;
-    border-radius: 12px;
-    background: transparent;
-    border: 2px solid gold;
-    color: goldenrod;
-    margin-top: 10px;
-    margin-left: auto;
-    cursor: pointer;
-    transition: all .25s ease;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: .75rem;
-    outline: none;
-}
-
-.card .text p button:hover {
-    background: goldenrod;
-    color: #000;
-
-}
-
-p {
-    color: darkgreen;
-    font-size: 2rem;
-    text-transform: uppercase;
-
-}
-
-h3 {
-    font-weight: 200;
-    margin-bottom: 15px;
-    color: #ffc600;
-    font-weight: bold;
-
-}
-
-li,
-a,
-button {
-    font-weight: 500;
-    font-size: 16px;
-    color: black;
-    text-decoration: none;
-}
-
-
 
 /*
 .container {

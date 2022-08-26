@@ -7,18 +7,19 @@ import Footer from "../src/components/Footer/Footer.jsx";
 import { CartProvider } from "./Store/cartContext.jsx";
 
 
+
 function App() {
 
   return (
 
     <BrowserRouter>
-    <CartProvider>
-      <NavBar />
-      <Routes >
-      <Route path='/' element={<ItemListContainer />} />
-      <Route path="/item/:id" element={<ItemDetail />} />
-      </Routes>
-      <Footer />
+      <CartProvider>
+        <NavBar />
+        <Routes >
+          <Route path='/' element={<ItemListContainer />} />
+          <Route path="/item/:id" element={<ItemDetail />} />
+        </Routes>
+        <Footer />
       </CartProvider>
 
     </BrowserRouter>

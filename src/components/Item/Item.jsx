@@ -1,25 +1,31 @@
 import "./Item.css";
 import { Link } from "react-router-dom";
+import Button from "../../../src/components/Button/Button"
 
-function Item({ id, name, price, img, description }) {
+
+function Item({ id, name, price, img, }) {
 
 
     return (
 
-        <div className="container">
-            <div className="card" key={id}>
-                <Link to={"/item/${id}"}>
-                    <img src={img} alt="imagen" />
+        <div className="card">
+            <div className="card-img">
+                <img src={img} alt="imagen" />
+            </div>
+            <div className="card-detail">
+                <h2>{name}</h2>
+                <h3>$ {price}</h3>
+                
+                <Link to={`/detalle/${id}`}>
+                    <Button
+                        onTouch={() => alert(`Clickeado el item: ${name}`)} 
+                        text="Ver más"
+                    ></Button>
                 </Link>
-                <div className="text">
-                    <h2>{name}</h2>
-                    <h3>{description}
-                        <p>$ {price}</p>
-                        <button>Ver mas</button>
-                    </h3>
-                </div>
+
             </div>
         </div>
+
 
     );
 }
