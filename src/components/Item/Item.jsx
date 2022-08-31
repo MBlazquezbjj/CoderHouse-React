@@ -1,6 +1,5 @@
 import "./Item.css";
-import { Link } from "react-router-dom";
-import Button from "../../../src/components/Button/Button"
+
 
 
 function Item({ id, name, price, img, }) {
@@ -15,13 +14,8 @@ function Item({ id, name, price, img, }) {
             <div className="card-detail">
                 <h2>{name}</h2>
                 <h3>$ {price}</h3>
+                <button>Ver Mas</button>
                 
-                <Link to={`/detalle/${id}`}>
-                    <Button
-                        onTouch={() => alert(`Clickeado el item: ${name}`)} 
-                        text="Ver más"
-                    ></Button>
-                </Link>
 
             </div>
         </div>

@@ -11,9 +11,9 @@ function NavBar() {
             <CartWidget />
             <nav>
                 <ul className="nav_links">
-                    <li> <Link to="../Login/Login.jsx">Iniciar Sesion</Link> </li>
+                    <li> <Link to="/src/components/Login/Login.jsx">Iniciar Sesion</Link> </li>
                     <li> <Link to="/">Productos</Link> </li>
-                    <li> <Link to="">Galeria</Link> </li>
+                    <li> <Link to="/src/components/Galery/Galery.jsx">Galeria</Link> </li>
                     <li> <Link to="../Footer/Footer.jsx">Sobre nosotros</Link> </li>
                 </ul>
             </nav>
