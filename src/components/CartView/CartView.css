@@ -1,0 +1,18 @@
+table {
+    border-spacing: 0;
+    width: 95%;
+    margin: 15px auto;
+}
+
+thead {
+    background-color: #0a141d;
+    margin: 8px auto;
+}
+
+th {
+    color: whitesmoke;
+}
+
+thead tr {
+    line-height: 36px;
+}

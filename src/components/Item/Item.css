@@ -2,7 +2,6 @@ body {
     margin: 0 auto;
     padding: 0;
     background-color: #24252a;
-
 }
 
 .card-img {
@@ -42,6 +41,7 @@ body {
 small {
     color: #8c8c8e;
 }
+
 button {
     text-decoration: none;
     display: inline-block;
