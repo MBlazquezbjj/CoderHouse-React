@@ -1,8 +1,14 @@
+import { Link } from 'react-router-dom'
+
 function CartWidget() {
+
+
     return (
-        <i>
-            <ion-icon name="cart-outline"></ion-icon>
-        </i>
+        <Link to='/cart' className="CartWidget">
+            <i>
+                <ion-icon name="cart-outline"></ion-icon>
+            </i>
+        </Link>
     )
 }
 

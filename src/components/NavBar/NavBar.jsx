@@ -11,13 +11,13 @@ function NavBar() {
             <CartWidget />
             <nav>
                 <ul className="nav_links">
-                    <li> <Link to="/src/components/Login/Login.jsx">Iniciar Sesion</Link> </li>
+                    <li> <Link to="/login">Iniciar Sesion</Link> </li>
                     <li> <Link to="/">Productos</Link> </li>
-                    <li> <Link to="">Galeria</Link> </li>
-                    <li> <Link to="../Footer/Footer.jsx">Sobre nosotros</Link> </li>
+                    <li> <Link to="/galeria">Galeria</Link> </li>
+                    <li> <Link to="/nosotros">Sobre nosotros</Link> </li>
                 </ul>
             </nav>
-            <Link to="/src/components/UserForm/UserForm.jsx">
+            <Link to="/contact">
                 <button>Contacto</button>
             </Link>
 

@@ -11,7 +11,7 @@ function Item({ id, name, price, img }) {
             <div className="card-detail">
                 <h2>{name}</h2>
                 <h3>$ {price}</h3>
-                <Link to= "/src/components/ItemDetailContainer/ItemDetail.jsx">
+                <Link to= "/item">
                     <button>
                         Ver Mas
                     </button>
