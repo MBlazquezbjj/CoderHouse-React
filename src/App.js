@@ -9,8 +9,11 @@ import UserForm from "./components/UserForm/UserForm.jsx";
 import CartView from "../src/components/CartView/CartView.jsx";
 import Footer from "../src/components/Footer/Footer.jsx";
 import { CartProvider } from "./Store/cartContext.jsx";
+import firestoreDB from "./services/firestore";
+
 
 function App() {
+  console.log(firestoreDB);
 
   return (
 

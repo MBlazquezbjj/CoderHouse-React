@@ -12,7 +12,7 @@ function ItemCount(props) {
         }
     };
     const handleDecrement = () => {
-        setCounter(counter - 1);
+        setCounter(counter - 0);
         if (counter > 1) {
             setCounter(counter - 1);
         }
